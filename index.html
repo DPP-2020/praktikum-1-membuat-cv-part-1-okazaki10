@@ -16,6 +16,11 @@
 hr.new1 {
   border-top: 1px solid white;
 }
+@media only screen and (max-width: 600px) {
+  .hilang {
+    visibility: hidden;
+  }
+}
 </style>
 <body style="
     background-color: black;
@@ -45,9 +50,15 @@ background-color: white;
         <p style="font-size: 14px;">john10@gmail.com</p>
         <div style="font-size: 15px;font-weight: bold;">Telephone</div>
         <p style="font-size: 14px;">081234456567</p>
+        <div class="hilang" style="background-color: aliceblue;color:black">
+            ini bakal hilang kalau screen dibawah 600
+        </div>
       </div>
+    
       <div class="col-sm-9">
-          <header>
+          <header style="
+          margin-top: 7px;
+      ">
               <h1> 
         <p style="font-size: 40px;font-weight: bold;">John John</p></h1>
         </header>
